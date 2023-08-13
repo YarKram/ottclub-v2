@@ -1,0 +1,35 @@
+@mixin small {
+	@media screen and (min-width: $breakpoint-small) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media screen and (min-width: $breakpoint-medium) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: $breakpoint-tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $breakpoint-desktop) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media screen and (min-width: $breakpoint-large) {
+		@content;
+	}
+}
+
+@mixin extra-large {
+	@media screen and (min-width: $breakpoint-extra-large) {
+		@content;
+	}
+}

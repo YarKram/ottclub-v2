@@ -1,0 +1,142 @@
+.faq__container {
+	padding-top: 16px;
+
+	@include medium {
+		padding-top: 32px;
+	}
+
+	@include tablet {
+		padding-top: 40px;
+	}
+
+	@include desktop {
+		padding-top: 57px;
+	}
+}
+
+.faq__title {
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 33.6px */
+
+	margin-bottom: 24px;
+
+	@include medium {
+		font-size: 30px;
+		margin-bottom: 32px;
+	}
+
+	@include tablet {
+		text-align: left;
+	}
+
+	@include desktop {
+		font-size: 36px;
+	}
+
+	@include large {
+		font-size: 40px;
+	}
+}
+
+.faq__list {
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		padding-bottom: 40px;
+
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	@include desktop {
+		padding-bottom: 48px;
+	}
+
+	@include large {
+		padding-bottom: 80px;
+		column-gap: 178px;
+	}
+}
+
+.faq__item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	color: #fff;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 22.4px */
+	padding-bottom: 20px;
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+	@include desktop {
+		padding-bottom: 27px;
+	}
+
+	&:nth-last-child(1) {
+		padding-bottom: 48px;
+		@include medium {
+			padding-bottom: 87px;
+		}
+	}
+
+	&:nth-last-child(-n + 2) {
+		@include tablet {
+			border-bottom: none;
+		}
+		@include desktop {
+			padding-bottom: 27px;
+		}
+	}
+
+	@include tablet {
+		width: calc(50% - 12px);
+	}
+
+	@include large {
+		font-size: 18px;
+		width: calc(50% - 178px / 2);
+		gap: 50px;
+		font-weight: 500;
+	}
+}
+
+.faq__content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.faq__text {
+	display: flex;
+	align-items: flex-start;
+}
+
+.faq-icon {
+	display: flex;
+}
+
+.faq__description {
+	color: #fff;
+
+	/* Body 1/Regular */
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 24px */
+}
+.faq__description.hidden {
+	display: none;
+}
